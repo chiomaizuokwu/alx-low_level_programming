@@ -3,8 +3,8 @@
 	*main -  this function prints out a text
 	* Returns: 0 if successful
 	*/
-int main(void)
+int main - prints a text(void)
 {
-	puts("programming is like building a multilingual puzzle\n");
+	puts("\"Programming is like building a multilingual puzzle");
 	return (0);
 }
