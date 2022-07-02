@@ -5,17 +5,17 @@
  */
 int main(void)
 {
-	int digit 1, digit 2;
+	int digit1, digit2;
 
-	for (digit 1 = '0'; digit 1 <= '9'; digit 1++)
+	for (digit1 = '0'; digit1 <= '9'; digit1++)
 	{
-		for (digit 2 = '0'; digit 2 <= '9'; digit 2++)
+		for (digit2 = '0'; digit2 <= '9'; digit2++)
 		{
-			if (digit 1 < digit 2)
+			if (digit1 < digit2)
 			{
-				putchar(digit 1);
-				putchar(digit 2);
-				if (digit 1 != '8' || (digit 1 == '8' && digit 2 != '9'))
+				putchar(digit1);
+				putchar(digit2);
+				if (digit1 != '8' || (digit1 == '8' && digit2 != '9'))
 				{
 					putchar(',');
 					putchar(' ');
