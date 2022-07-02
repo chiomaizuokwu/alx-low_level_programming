@@ -5,8 +5,9 @@
  */
 int main(void)
 {
-	x1, x2;
-	for (x1 = '0'; x1 <= '98'; x1++)
+	int x1, x2;
+
+	for (x1 = 0; x1 <= 98; x1++)
 	{
 		for (x2 = x1 + 1; x2 <= 99; x2++)
 		{
