@@ -4,7 +4,7 @@
  * @n: number of times
  * Return: void
  */
-voi print_line(int n)
+void print_line(int n)
 {
 	int a;
 
