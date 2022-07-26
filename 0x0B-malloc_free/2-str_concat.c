@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
  * str_concat - Concatenates two strings.
  * @s1: The string to be concatenated upon.
@@ -35,8 +34,7 @@ char *str_concat(char *s1, char *s2)
 	s = malloc(q * sizeof(char));
 	if (s == NULL)
 		return (NULL);
-
-		for (r = 0; r < i; ++r)
+	for (r = 0; r < i; ++r)
 		s[r] = s1[r];
 	for  (r = 0; r < j; ++r)
 		s[r + i] = s2[r];
