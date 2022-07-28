@@ -10,7 +10,8 @@
 void _print(char *str, int l)
 {
 	int i, j;
-i = j = 0;
+	
+	i = j = 0;
 	while (i < l)
 	{
 		if (str[i] != '0')
@@ -19,7 +20,7 @@ i = j = 0;
 			_putchar(str[i]);
 		i++;
 	}
-_putchar('\n');
+	_putchar('\n');
 	free(str);
 }
 /**
@@ -35,7 +36,8 @@ _putchar('\n');
 char *mul(char n, char *num, int num_index, char *dest, int dest_index)
 {
 	int j, k, mul, mulrem, add, addrem;
-mulrem = addrem = 0;
+
+	mulrem = addrem = 0;
 	for (j = num_index, k = dest_index; j >= 0; j--, k--)
 	{
 		mul = (n - '0') * (num[j] - '0') + mulrem;
