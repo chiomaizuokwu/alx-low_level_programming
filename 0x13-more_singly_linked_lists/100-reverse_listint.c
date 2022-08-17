@@ -1,21 +1,26 @@
 #include "lists.h"
-
 /**
- * print_listint - prints all the elements of a linked list
- * @h: head of the list
+ * reverse_listint - reverses a linked list.
+ * @head: head of a list.
  *
- * Return: the number of nodes
+ * Return: pointer to the first node.
  */
-size_t print_listint(const listint_t *h)
+listint_t *reverse_listint(listint_t **head)
 {
-	const listint_t *cursor = h;
-	size_t count = 0;
+	listint_t *p;
+	listint_t *n;
 
-	while (cursor != NULL)
+	p = NULL;
+	n = NULL;
+
+	while (*head != NULL)
 	{
-		printf("%d\n", cursor->n);
-		count += 1;
-		cursor = cursor->next;
+		n = (*head)->next;
+		(*head)->next = p;
+		p = *head;
+		*head = n;
 	}
-	return (count);
+
+	*head = p;
+	return (*head);
 }
